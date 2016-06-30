@@ -1,0 +1,14 @@
+{
+  "name": "easy-typescript-setup",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "watch" : "nodemon -e ts,js --exec 'npm start'"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2",
+    "ts-node": "^0.9.3",
+    "typescript": "^1.8.10",
+    "typescript-require": "^0.2.9"
+  }
+}
