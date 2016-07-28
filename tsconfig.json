@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "removeComments": false,
-    "experimentalDecorators": true
-  }
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "exclude" : [
+    "node_modules",
+    "typings",
+    "dist"
+  ]
 }

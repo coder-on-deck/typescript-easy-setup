@@ -1,12 +1,16 @@
-export interface Person{
-    firstName:string,
-    lastName:string
+export interface Person {
+  firstName:string,
+  lastName:string
 }
 
 
-export class Student{
-    fullName:string;
-    constructor(public firstName, public middleName, public lastName){
-        this.fullName = firstName + ' ' + middleName + ' ' + lastName
-    }
+export class Student {
+  fullName:string;
+
+  constructor(public firstName, public middleName, public lastName) {
+    this.fullName = firstName + ' ' + middleName + ' ' + lastName
+  }
+  getFullName(){
+    return 'fullname : ' + this.fullName;
+  }
 }

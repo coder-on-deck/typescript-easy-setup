@@ -28,12 +28,20 @@ typings install
 the dependencies are kept in typings.json
 
 
+## Debugging 
+
+ - run `npm run compile`
+ - tell intellij to run the relevant `js` file under folder `dist`
+ - put breakpoint on the relevant `tsc` file
+
+
 tasks
 
  - [x] try typescript-node
- - [ ] try typescript-require
- - [ ] write code that will import other code
- - [ ] import nodejs libraries
- - [ ] write frontend example as well
+ - [x] write code that will import other code
+ - [x] import nodejs libraries
+ - [x] write frontend example as well
+ - [x] be able to debug backend code
+ - [ ] be able to debug frontend code
  - [ ] add linter 
  - [ ] add tests

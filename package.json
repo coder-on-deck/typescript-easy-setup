@@ -8,7 +8,9 @@
     "protractor": "protractor protractor.conf.js",
     "webdriver:start": "webdriver-manager start --standalone",
     "server": "lite-server",
-    "start:native" : "ts-node nativeLibSupport.ts"
+    "start:native" : "ts-node nativeLibSupport.ts",
+    "compile" : "tsc --p tsconfig.json --outDir dist",
+    "clean" :"rm -rf dist"
   },
   "devDependencies": {
     "nodemon": "^1.9.2",
