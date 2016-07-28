@@ -33,6 +33,8 @@ the dependencies are kept in typings.json
  - run `npm run compile`
  - tell intellij to run the relevant `js` file under folder `dist`
  - put breakpoint on the relevant `tsc` file
+ 
+* This also works for frontend
 
 
 tasks
@@ -42,6 +44,6 @@ tasks
  - [x] import nodejs libraries
  - [x] write frontend example as well
  - [x] be able to debug backend code
- - [ ] be able to debug frontend code
- - [ ] add linter 
- - [ ] add tests
+ - [x] be able to debug frontend code
+ - [x] add linter 
+ - [x] add tests

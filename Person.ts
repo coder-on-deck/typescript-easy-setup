@@ -5,12 +5,12 @@ export interface Person {
 
 
 export class Student {
-  fullName:string;
+  fullName:string
 
   constructor(public firstName, public middleName, public lastName) {
     this.fullName = firstName + ' ' + middleName + ' ' + lastName
   }
   getFullName(){
-    return 'fullname : ' + this.fullName;
+    return 'fullname : ' + this.fullName
   }
 }

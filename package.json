@@ -4,17 +4,23 @@
   "scripts": {
     "postinstall": "webdriver-manager update && typings install",
     "start": "ts-node index.ts",
+    "test" : "npm run lint --silent",
     "watch": "nodemon -e ts,js,json --exec 'npm start --silent'",
-    "protractor": "protractor protractor.conf.js",
+    "preprotract": "npm run compile && (webdriver-manager start &) && sleep 2",
+    "protract": "protractor protractor.conf.js",
+    "postprotract" : "wget -O - http://localhost:4444/selenium-server/driver?cmd=shutDownSeleniumServer && sleep 2 && echo done",
     "webdriver:start": "webdriver-manager start --standalone",
     "server": "lite-server",
-    "start:native" : "ts-node nativeLibSupport.ts",
-    "compile" : "tsc --p tsconfig.json --outDir dist",
-    "clean" :"rm -rf dist"
+    "start:native": "ts-node nativeLibSupport.ts",
+    "compile": "tsc --p tsconfig.json --outDir dist",
+    "clean": "rm -rf dist",
+    "lint:watch" : "nodemon -e ts --exec 'npm run lint --silent'",
+    "lint": "tslint -p tsconfig.json -c tslint.json **/*.ts *.ts"
   },
   "devDependencies": {
     "nodemon": "^1.9.2",
     "ts-node": "^0.9.3",
+    "tslint": "^3.14.0",
     "typescript": "^1.8.10",
     "typescript-require": "^0.2.9",
     "typings": "^1.3.1"

@@ -32,9 +32,10 @@ class Greeter {
     public time:Date = new Date()
     // @meth()
     hello( @param() person:Person):string {
-        return "hello " + person.firstName + ' ' + person.lastName
+        return 'hello ' + person.firstName + ' ' + person.lastName
     }
 }
+
 
 let student = new Student('foo','bar','zoom')
 console.log(new Greeter().hello(student))
