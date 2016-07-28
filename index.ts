@@ -1,6 +1,6 @@
 'use strict'
 import {Person, Student} from './Person'
-import fs = require('fs')
+
 
 function meth(){
     return function(obj:Object,key:string,descriptor:TypedPropertyDescriptor<Object>){

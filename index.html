@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1>Hello Foo</h1>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        packages: {
+          '': {
+            defaultExtension: 'ts'
+          }
+        }
+      });
+      System.import('index')
+    </script>
+  </body>
+</html>
